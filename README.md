@@ -13,7 +13,6 @@ recipe-app/
 │   ├── requirements.txt
 │   ├── alembic.ini
 │   ├── alembic/
-│   │   ├── env.py
 │   │   └── versions/
 │   │       └── 0001_initial.py        # Initial migration
 │   ├── models/
@@ -132,7 +131,6 @@ Logic:  For each stored recipe, count matching ingredients
         Return top-K results with match score %
 Output: Ranked list of recipes with match percentage
 ```
-No ML models, no vector databases — pure set-intersection logic.
 
 ### 2. Nutritional Auto-Tagging
 Recipes are automatically classified on creation:
@@ -159,7 +157,6 @@ Missing: butter       → Use: olive oil
 Missing: cream        → Use: coconut cream
 Missing: sour cream   → Use: Greek yogurt
 ```
-Powered by a static dictionary — no external APIs needed.
 
 ### 5. Real-Time WebSocket Notifications
 - Frontend connects to `ws://localhost:8000/ws` on load
