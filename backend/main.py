@@ -15,7 +15,6 @@ app = FastAPI(
         "real-time WebSocket broadcasts, and export (Markdown/PDF)."
     ),
     version="1.0.0",
-    contact={"name": "Aumne Intern Challenge"},
 )
 
 app.add_middleware(

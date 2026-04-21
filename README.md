@@ -1,5 +1,4 @@
 # 🍳 RecipeShare – Recipe Sharing & Recommendation App
-### Aumne Intern Coding Challenge Submission
 
 A full-stack recipe platform built with **FastAPI** (backend), **ReactJS** (frontend), **SQLite + SQLAlchemy + Alembic** (database), with rule-based recommendations, real-time WebSocket notifications, export features, and auto-generated Python SDK.
 
@@ -37,13 +36,7 @@ recipe-app/
 │       ├── App.js                     # Root component + tab nav
 │       ├── App.css                    # Full design system
 │       ├── index.js
-│       ├── components/
-│       │   ├── Header.jsx             # Dynamic greeting header
-│       │   ├── AddRecipeForm.jsx      # Chip/tag ingredient input
-│       │   ├── RecipeList.jsx         # Filterable recipe grid
-│       │   ├── RecipeCard.jsx         # Card with export + delete
-│       │   ├── Recommendations.jsx    # Ingredient search + match bars
-│       │   └── Charts.jsx             # Recharts pie + bar charts
+│       ├── components
 │       ├── hooks/
 │       │   └── useWebSocket.js        # Auto-reconnecting WS hook
 │       └── services/
@@ -81,13 +74,6 @@ chmod +x setupdev.sh runapplication.sh scripts/generate_sdk.sh
 ./setupdev.sh
 ```
 
-This script:
-1. Creates a Python virtual environment
-2. Installs all Python packages
-3. Runs Alembic migrations (`alembic upgrade head`)
-4. Seeds 10 sample recipes into the database
-5. Installs all React/npm packages
-
 ---
 
 ## 🚀 Running the Application
@@ -106,7 +92,6 @@ runapplication.bat
 |---------|-----|
 | FastAPI Backend | http://localhost:8000 |
 | Swagger UI | http://localhost:8000/docs |
-| ReDoc | http://localhost:8000/redoc |
 | React Frontend | http://localhost:3000 |
 
 ---

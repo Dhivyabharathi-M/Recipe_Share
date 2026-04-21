@@ -59,7 +59,7 @@ export default function App() {
       </main>
 
       <footer className="app-footer">
-        <p>RecipeShare · Built with FastAPI + React · Aumne Intern Challenge</p>
+        <p>RecipeShare · Built with FastAPI + React</p>
       </footer>
     </div>
   );
