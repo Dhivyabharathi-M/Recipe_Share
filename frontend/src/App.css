@@ -1,7 +1,7 @@
-/* ─── Google Fonts ───────────────────────────────────────────────────────── */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap');
 
-/* ─── Design tokens ──────────────────────────────────────────────────────── */
+/* Design tokens */
 :root {
   --bg:          #faf8f6;
   --bg-card:     #ffffff;
@@ -24,7 +24,7 @@
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ─── Reset & base ───────────────────────────────────────────────────────── */
+/* Reset & base */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -37,7 +37,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* ─── Header ─────────────────────────────────────────────────────────────── */
+/* Header */
 .app-header {
   background: linear-gradient(135deg, #ffffff 0%, #f9f7f4 100%);
   color: var(--text);
@@ -98,7 +98,7 @@ body {
   font-weight: 500;
 }
 
-/* ─── Tab nav ────────────────────────────────────────────────────────────── */
+/* Tab nav  */
 .tab-nav {
   background: var(--bg-card);
   border-bottom: 2px solid var(--border);
@@ -146,14 +146,14 @@ body {
   border-bottom: 3px solid var(--accent);
 }
 
-/* ─── Main layout ────────────────────────────────────────────────────────── */
+/* Main layout */
 .main-content {
   max-width: 1100px;
   margin: 0 auto;
   padding: 32px 24px 64px;
 }
 
-/* ─── Card ───────────────────────────────────────────────────────────────── */
+/* Card */
 .card {
   background: var(--bg-card);
   border: 1.5px solid var(--border);
@@ -199,7 +199,7 @@ body {
   margin-bottom: 24px;
 }
 
-/* ─── Forms ──────────────────────────────────────────────────────────────── */
+/* Forms */
 .recipe-form { display: flex; flex-direction: column; gap: 20px; }
 .form-group  { display: flex; flex-direction: column; gap: 6px; }
 .form-row    { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -236,7 +236,7 @@ textarea {
   min-height: 120px;
 }
 
-/* ─── Tag / chip input ───────────────────────────────────────────────────── */
+/* Tag / chip input */
 .tag-input-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -297,7 +297,7 @@ textarea {
   transform: scale(1.2);
 }
 
-/* ─── Buttons ────────────────────────────────────────────────────────────── */
+/* Buttons  */
 .btn-primary {
   background: var(--gradient-primary);
   color: #fff;
@@ -379,7 +379,7 @@ textarea {
   box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
 }
 
-/* ─── Filter tabs ────────────────────────────────────────────────────────── */
+/* Filter tabs  */
 .filter-tabs { 
   display: flex;
   gap: 8px;
@@ -413,14 +413,14 @@ textarea {
   transform: translateY(-2px);
 }
 
-/* ─── Recipe grid ────────────────────────────────────────────────────────── */
+/* Recipe grid  */
 .recipe-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 24px;
 }
 
-/* ─── Recipe card ────────────────────────────────────────────────────────── */
+/* Recipe card */
 .recipe-card {
   background: var(--bg-card);
   border: 1.5px solid var(--border);
@@ -757,13 +757,6 @@ textarea {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: .03em;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-}
-.missing-label::before {
-  content: '⚠️';
-  font-size: 1rem;
 }
 .sub-list {
   list-style: none;

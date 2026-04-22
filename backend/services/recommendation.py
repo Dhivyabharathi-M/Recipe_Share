@@ -76,6 +76,14 @@ SUBSTITUTIONS: Dict[str, str] = {
     "sugar":          "honey or maple syrup",
     "flour":          "almond flour or coconut flour",
     "egg":            "flax eggs (1 tbsp ground flax + 3 tbsp water per egg)",
+    "onion":          "shallots or garlic powder",
+    "olive oil":      "vegetable oil or avocado oil",
+    "garlic":         "garlic powder or shallots",
+    "bell pepper":    "paprika or red pepper flakes",
+    "tomato":         "tomato paste or sun-dried tomatoes",
+    "salt":           "sea salt or soy sauce",
+    "pepper":         "white pepper or cayenne",
+    "rice":           "quinoa or couscous",
 }
 
 def get_substitutions(missing: List[str]) -> Dict[str, str]:
