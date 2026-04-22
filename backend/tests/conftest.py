@@ -1,8 +1,3 @@
-"""
-conftest.py – Must live alongside the test files so pytest loads it first.
-It patches models.database to use an in-memory SQLite DB before any
-application module is imported.
-"""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
